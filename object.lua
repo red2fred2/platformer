@@ -2,10 +2,7 @@ Object = {}
 Object.__index = Object
 
 function Object.create(x, y)
-  local self = setmetatable({
-    x = 0,
-    y = 0
-  }, Object)
+  local self = setmetatable({}, Object)
 
   self.x = x
   self.y = y
