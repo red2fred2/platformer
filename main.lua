@@ -2,7 +2,7 @@
 
 --functions
 require 'settings'
-require 'screenFunctions'
+require 'screen'
 require 'input'
 
 --classes
