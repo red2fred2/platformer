@@ -1,15 +1,12 @@
 Object = {}
 Object.__index = Object
 
-function Object.create(x, y)
+function Object.create()
   local self = setmetatable({}, Object)
-
-  self.x = x
-  self.y = y
 
   return self
 end
 
 function Object:debug()
-  --draw hitbox
+  
 end
