@@ -2,9 +2,9 @@
 
 ingame = {}
 
-ingame.objects = {}
-
 --------------------WORLD OBJECTS--------------------
+
+ingame.objects = {}
 
 
 --------------------START--------------------
@@ -26,5 +26,5 @@ end
 --------------------DRAW--------------------
 
 function ingame.draw()
-  
+
 end
