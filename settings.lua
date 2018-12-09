@@ -61,10 +61,7 @@ function settings.load()
   --load graphics
   love.mouse.setVisible(false)
   love.graphics.setDefaultFilter('nearest', 'nearest')
-  screenFunctions.updatePixels()
-
-  --load physics
-  love.physics.setMeter(settings.display.pixel.meter)
+  screen.updatePixels()
 
   ingame.load()
 end

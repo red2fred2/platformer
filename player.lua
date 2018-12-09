@@ -1,5 +1,9 @@
+--------------------OBJECT--------------------
+
 Player = {}
 Player.__index = Player
+
+--------------------START--------------------
 
 function Player.create(x, y)
   local self = setmetatable({
@@ -14,10 +18,10 @@ function Player.create(x, y)
   return self
 end
 
-function Player:update(dt)
+--------------------DEBUG--------------------
+
+function Player:debug()
 
 end
 
-function Player:draw()
-
-end
+--------------------FUNCTIONS--------------------

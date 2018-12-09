@@ -43,10 +43,10 @@ end
 
 --------------------DRAW--------------------
 function love.draw()
-  screenFunctions.transformPixels()
-  screenFunctions.drawBackground()
+  screen.transformPixels()
+  screen.drawBackground()
   game.state.draw()
-  screenFunctions.drawBlockers()
+  screen.drawBlockers()
 end
 
 --------------------END--------------------
@@ -58,7 +58,7 @@ end
 --------------------CALLBACK FUNCTIONS--------------------
 
 function love.resize(width, height)
-  screenFunctions.updatePixels(width, height)
+  screen.updatePixels(width, height)
 end
 
 function love.gamepadpressed(joystick, button)

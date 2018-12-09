@@ -1,10 +1,16 @@
-screenFunctions = {}
+--------------------OBJECT--------------------
+
+screen = {}
+
+--------------------CONSTANTS--------------------
 
 local lg = love.graphics
 local sd = settings.display
 local sdp = sd.pixel
 
-function screenFunctions.updatePixels(width, height)
+--------------------FUNCTIONS--------------------
+
+function screen.updatePixels(width, height)
   local width = width or lg.getWidth()
   local height = height or lg.getHeight()
 
@@ -20,17 +26,17 @@ function screenFunctions.updatePixels(width, height)
   sd.offset.y = yDiff / sdp.size / 2
 end
 
-function screenFunctions.transformPixels()
+function screen.transformPixels()
   lg.scale(sdp.size, sdp.size)
   lg.translate(sd.offset.x, sd.offset.y) --add camera code here
 end
 
-function screenFunctions.drawBackground()
+function screen.drawBackground()
   lg.setColor(sd.colors.background)
   lg.rectangle('fill', 0, 0, sdp.x, sdp.y)
 end
 
-function screenFunctions.drawBlockers()
+function screen.drawBlockers()
   lg.origin()
   lg.scale(sdp.size, sdp.size)
   lg.setColor(sd.colors.background)
